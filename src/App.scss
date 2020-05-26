@@ -1,0 +1,83 @@
+// change the theme
+// #bfd656,
+$theme-colors: (
+  "primary": #36ffe3,
+  "danger": #ff4136
+);
+
+// Typography
+$font-size-base: 12px; // this changes the font-size throughout bootstrap
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Bootstrap variable
+// --blue: #007bff;
+//   --indigo: #6610f2;
+//   --purple: #6f42c1;
+//   --pink: #e83e8c;
+//   --red: #dc3545;
+//   --orange: #fd7e14;
+//   --yellow: #ffc107;
+//   --green: #28a745;
+//   --teal: #20c997;
+//   --cyan: #17a2b8;
+//   --white: #fff;
+//   --gray: #6c757d;
+//   --gray-dark: #343a40;
+//   --primary: #007bff;
+//   --secondary: #6c757d;
+//   --success: #28a745;
+//   --info: #17a2b8;
+//   --warning: #ffc107;
+//   --danger: #dc3545;
+//   --light: #f8f9fa;
+//   --dark: #343a40;
+//   --breakpoint-xs: 0;
+//   --breakpoint-sm: 576px;
+//   --breakpoint-md: 768px;
+//   --breakpoint-lg: 992px;
+//   --breakpoint-xl: 1200px;
+//   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// }
+@import "~bootstrap/scss/bootstrap.scss";
+
+.btn:focus {
+  box-shadow: none !important;
+}
+.input-add-person::after {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  color: gray;
+  font-size: 12px;
+  transform: translateY(-50%);
+  content: "Enter";
+}
+
+.remove-cross {
+  // &:hover{
+
+  // }
+}
+
+.btn {
+  .class1:hover {
+    background: #ffffff;
+  }
+}
+
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+    z-index: 0 !important;
+    /* your new styles */
+  }
+}
