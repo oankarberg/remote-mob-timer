@@ -9,11 +9,12 @@ export {
   InputGroup,
   FormGroup,
   Spinner,
-  Modal
+  Modal,
+  Image,
 } from "react-bootstrap";
 
 const B = styled(Button)`
-  ${props =>
+  ${(props) =>
     props.rounded &&
     css`
       border-radius: 20px;

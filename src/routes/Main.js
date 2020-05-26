@@ -1,11 +1,11 @@
 import React from "react";
 import { CreateRoom } from "../components/CreateRoom";
-import { Col, Container, Row } from "../ui-wrapper";
+import { Col, Container, Row, Image } from "../ui-wrapper";
 
 const Main = () => {
   return (
-    <Container className="h-100 d-flex  align-items-center">
-      <div className="text-center" style={{ marginTop: "-30%" }}>
+    <Container className="h-100 d-flex flex-column justify-content-around">
+      <div className="text-center">
         <Row className="py-3">
           <Col>
             <h1 className=""> Remote Mob</h1>
@@ -25,6 +25,23 @@ const Main = () => {
         <Row className="py-4">
           <CreateRoom />
         </Row>
+      </div>
+
+      <div style={{ textAlign: "center" }}>
+        <a
+          href="https://github.com/oankarberg/remote-mob-timer"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/assets/github/Github-Mark-Light-32px.png"
+            width={24}
+            rounded
+          />
+          <div className="py-2" style={{ fontSize: "12px" }}>
+            Source Code
+          </div>
+        </a>
       </div>
     </Container>
   );
