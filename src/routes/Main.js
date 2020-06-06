@@ -2,6 +2,8 @@ import React from "react";
 import { CreateRoom } from "../components/CreateRoom";
 import { Col, Container, Row, Image } from "../ui-wrapper";
 
+import logo from "../assets/github/logo-32.png";
+
 const Main = () => {
   return (
     <Container className="h-100 d-flex flex-column justify-content-around">
@@ -33,11 +35,7 @@ const Main = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            src="/assets/github/Github-Mark-Light-32px.png"
-            width={24}
-            rounded
-          />
+          <Image src={logo} width={24} rounded />
           <div className="py-2" style={{ fontSize: "12px" }}>
             Source Code
           </div>
