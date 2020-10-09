@@ -1,6 +1,6 @@
 # Remote Mob Timer
 
-This web application utilizes a synced timer together with browser notifications to facilitate remote mob programming. The timer application is also suitable for other remote collaboration work.
+This web application utilizes a synced timer together with browser notifications to facilitate remote mob programming. Each user joins the specific mob room through a shared link and will then be able to select active participant, get notifications on timer etc. The timer application is also suitable for other remote collaboration work.
 
 - **Technology stack**: React and Firebase. Deployment is done through Google Cloud.
 - **Status**: Alpha [CHANGELOG](CHANGELOG.md).
